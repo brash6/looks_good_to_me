@@ -1,7 +1,6 @@
 import streamlit as st
 from openai import OpenAI
 
-from config import OPENAI_API_KEY
 from package_review import get_file_content, get_package_review
 
 st.write('# Looks good to me')
