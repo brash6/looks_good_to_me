@@ -67,7 +67,7 @@ def get_file_content(repo_url, file_path, client):
 
         input_prompt = f"Here is a python file {file_path} of a github repository called {repo} \n"
         input_prompt += f"{content}\n"
-        input_prompt += f"Can you make suggestions to improve this python file ?"
+        input_prompt += f"Can you refactor this file to make it cleaner, better structured and matching industry programming quality standards (docstrings, relevant comments, strongtyping)?"
 
         response = client.chat.completions.create(
             model="gpt-4",
