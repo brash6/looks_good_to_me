@@ -10,7 +10,7 @@ st.set_page_config(
 
 ss = st.session_state
 
-st.title
+st.title("# Looks Good To Me")
 st.write('## 1- Enter your OpenAI API key')
 api_key = st.text_input('OpenAI API key', type='password', key="api_key",
                         label_visibility="collapsed")
